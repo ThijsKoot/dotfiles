@@ -1,0 +1,5 @@
+inoremap jj <Esc>
+nnoremap ; :action SearchEverywhere<CR>
+nnoremap ]g :action NextDiagnosticError<CR>
+nnoremap [g :action PreviousDiagnosticError<CR>
+nnoremap <space>ff :action ReformatCode<CR>

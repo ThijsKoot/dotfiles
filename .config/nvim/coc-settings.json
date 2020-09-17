@@ -1,0 +1,56 @@
+{
+  "coc.preferences.hoverTarget": "float",
+  "diagnostic.messageTarget": "float",
+  "suggest.enablePreview": true,
+  "suggest.echodocSupport": true,
+  "coc.preferences.formatOnInsertLeave": true,
+  "coc.preferences.snippets.enable": true,
+  "coc.preferences.formatOnType": true,
+  // markdownlint config
+  "markdownlint.config": {
+    "default": true,
+    "line_length": false,
+    "MD036": false
+  },
+  //explorer
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings": {
+    "<cr>": [
+      "expandable?",
+      "expand",
+      "open"
+    ],
+    "v": "open:vsplit"
+  },
+  "codeLens.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python"
+  ],
+  // python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "python.pythonPath": "/usr/local/anaconda3/envs/cocpython/bin/python",
+  // metals config
+  "metals.sbtScript": "/Users/thijskoot/.sdkman/candidates/sbt/current/bin/sbt",
+  "metals.statusBarEnabled": true,
+  // lsp
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": [
+        "terraform"
+      ],
+      "initializationOptions": {}
+    }
+  }
+}
