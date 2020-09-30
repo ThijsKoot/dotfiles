@@ -255,7 +255,7 @@ let g:lightline#bufferline = {
 let g:lightline = {
       \ 'tabline': {'left': [['buffers']], 'right': [['close']]},
       \ 'component_expand': {'buffers': 'lightline#bufferline#buffers'},
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'gruvbox',
       \ 'component_type': { 'buffers': 'tabsel' },
       \ 'active': { 'left':  [ [ 'mode', 'paste' ],
       \                        [ 'cocstatus',  'currentfunction', 'readonly', 'filename', 'modified', 'gitbranch'] ]
@@ -290,8 +290,7 @@ set hidden " Keep files open without displaying them on screen
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 
-" colorscheme gruvbox
-colorscheme nord
+colorscheme gruvbox
 
 let test#python#runner = 'pytest'
 
