@@ -144,3 +144,6 @@ alias kc=kubectl
 alias k=kubectl
 complete -F __start_kubectl k
 source /usr/share/nvm/init-nvm.sh
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.ghcup/bin:$PATH
+

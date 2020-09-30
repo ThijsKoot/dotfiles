@@ -342,8 +342,8 @@ myManageHook = (composeAll . concat $
      <+> manageHook def
 
   where
-    myClassWebShifts      = ["Vivaldi-stable", "Chromium"]
-    myClassTermShifts     = ["Termite","Konsole","uxterm","xterm"]
+    myClassWebShifts      = ["Firefox"]
+    myClassTermShifts     = ["Alacritty","Konsole","uxterm","xterm"]
     myClassWorkShifts     = ["Firefox Developer Edition"]
     myClassMediaShifts    = ["mpv", "vlc"]
     myClassSocialShifts   = ["TelegramDesktop"]
