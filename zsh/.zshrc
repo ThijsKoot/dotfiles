@@ -146,4 +146,5 @@ complete -F __start_kubectl k
 source /usr/share/nvm/init-nvm.sh
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.ghcup/bin:$PATH
-
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/scripts:$PATH

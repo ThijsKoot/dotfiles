@@ -7,7 +7,6 @@ endif
 call plug#begin('~/.vim/plugged')
   Plug 'rbgrouleff/bclose.vim'
   Plug 'SirVer/ultisnips'
-  Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
   Plug 'tmux-plugins/vim-tmux'
   Plug 'liuchengxu/vista.vim'
@@ -15,7 +14,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'Shougo/echodoc.vim'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'omnisharp/omnisharp-vim'
-  Plug 'dense-analysis/ale'
 
   Plug 'honza/vim-snippets'
 
@@ -60,8 +58,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'ryanoasis/vim-devicons' " Fancy icons for files. Should be loaded last
 
   Plug 'mhinz/vim-startify'
-
-  Plug 'kassio/neoterm'
   Plug 'voldikss/vim-floaterm'
   Plug 'junegunn/goyo.vim'
 call plug#end()
@@ -161,20 +157,6 @@ augroup omnisharp_commands
     autocmd FileType cs nnoremap <buffer> <Leader>cc :OmniSharpGlobalCodeCheck<CR>
 augroup END
 
-" In ~/.vim/vimrc, or somewhere similar.
-let g:ale_lint_on_save = 1
-let g:ale_linters_explicit = 1
-
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'bash': ['shellcheck'],
-\   'javascript': ['prettier-eslint']
-\}
-
-let g:ale_linters = {
-\ 'cs': [],
-\}
-
 " Explorer
 nmap <space>e :CocCommand explorer<CR>
 nmap <space>f :CocCommand explorer --preset floating<CR>
@@ -205,6 +187,7 @@ let g:python3_host_prog = '/usr/bin/python'
 
 
 autocmd FileType json setlocal shiftwidth=2 tabstop=2
+autocmd FileType yml,yaml setlocal shiftwidth=2 tabstop=2
 autocmd FileType vimwiki setlocal shiftwidth=2 tabstop=2
 autocmd FileType sql setlocal shiftwidth=4 tabstop=4
 
