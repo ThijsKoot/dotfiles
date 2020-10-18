@@ -45,7 +45,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
 
   Plug 'sheerun/vim-polyglot' " A solid language pack for Vim.
-  Plug 'iamcco/markdown-preview.nvim'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
   Plug 'tpope/vim-sleuth' " Automatically set 'shiftwidth' + 'expandtab' (indention) based on file type.
   Plug 'tpope/vim-sensible' " Sane defaults
